@@ -1,0 +1,130 @@
+/* a traves de este CSS le dare el estilo que quiero a la aplicacion */
+body {
+    background-color: rgb(126, 194, 231);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    font-size: 75%;
+    font-family: "Press Start 2P", cursive;
+  }
+  /* Estilo del menu principal y sus elementos */
+  .menu {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  #titulo {
+    font-family: fantasy;
+    font-size: 4rem;
+    color: rgb(238, 255, 0);
+    text-align: center;
+    animation: aparicion 3.5s linear;
+  }
+ 
+  .container h2 {
+    font-size: 1.5rem;
+    font-family: "Stick", sans-serif;
+    margin: 25px;
+  }
+  .selectores {
+    margin: 20px;
+    width: 55px;
+    height: 40px;
+  }
+
+  /* Estilo para los botones */
+  .send {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(182, 219, 255);
+    width: 35%;
+    border-radius: 25px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 8px;
+  }
+  
+  .send:hover {
+    background-color: rgb(64, 98, 131);
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Estilo para el menu*/
+  .menu-carrera {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+  }
+
+  /* dorsales de participantes */
+  .dorsal {
+    font-size: 0.9rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 0px;
+    width: 100%;
+    color: black;
+    text-align: center;
+  }
+
+  /* Estilo para la carretera carretera */
+  .pista {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(87, 84, 84);
+    margin: 2px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+  }
+
+  /* Los coches */
+  .vehiculos {
+    margin-left: 0px;
+    height: 98%;
+    width: 7%;
+  }
+
+  /* Estilo para la lista de posiciones final */
+  .posiciones p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    animation: derechaIzquierda 1.5s linear;
+  }
+  #posiciones {
+    font-size: 4rem;
+    color: rgb(255, 238, 0);
+    text-align: center;
+    animation: derechaIzquierda 1.5s linear;
+  }
+  
+/* Damos una animacion para el titulo al cargar la pagina */
+  @keyframes aparicion {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Damos una animacion para mostrar los resultados*/
+  @keyframes derechaIzquierda {
+    0% {
+      opacity: 0;
+      transform: translateX(16rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
